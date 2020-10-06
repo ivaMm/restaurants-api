@@ -6,11 +6,11 @@ class RestaurantPolicy < ApplicationPolicy
   end
 
   def create?
-    return true
+    !user.nil?
   end
 
   def show?
-    return true
+    true
   end
 
   def update?
