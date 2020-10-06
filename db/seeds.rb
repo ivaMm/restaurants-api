@@ -22,4 +22,12 @@ my_users.each do |user|
   Restaurant.create(user_id: user.id, name: Faker::Name.first_name, address: Faker::Address.street_address)
 end
 
+my_restaurants = Restaurant.all
+
+my_restaurants.each do |restaurant|
+  3.times do
+    Comment.create(user_id: restaurant.user_id, restaurant_id: restaurant.id, content: Faker::TvShows::Buffy.quote)
+  end
+end
+
 p "Done :)"
