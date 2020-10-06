@@ -31,8 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 
 gem 'pundit'
-
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'simple_token_authentication'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
